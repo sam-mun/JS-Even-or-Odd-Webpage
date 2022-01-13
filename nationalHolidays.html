@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Holidays</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        h1{
+            text-align:center;
+        }
+
+        ul{
+            text-align:center;
+            font-size:2em;
+            font-weight:900;
+            list-style:none;
+            font-style:italic;
+            letter-spacing: .4em;
+        }   
+
+        li{
+            border:2px solid #ffffff;
+        }
+
+        .ronald{
+            background-color:#ff573a;
+        }
+
+        .mcdonald{
+            background-color:rgb(255, 252, 89);
+        }
+
+        .lead{
+            margin-top:200px;
+            color:#eeeeee;
+        }
+    </style>
+</head>
+<body>
+    <h1>United States National Holidays</h1>
+    <div>
+        <ul>
+            <li id="hana" class="yourmom">New Year's Day</li>
+            <li id="dul" class="yourmom">Christmas Day</li>
+            <li id="set" class="yourmom">Thanksgiving Day</li>
+            <li id="net" class="yourmom">Your Mom Day</li>
+            <li id="daseut" class="yourmom">Juneteenth</li>
+        </ul>
+    </div>
+    
+    <p class="lead">
+        ronaldmcdonald :)
+    </p>
+    <script>
+        var element = document.querySelectorAll("li.yourmom");
+            for (i = 0; i < element.length; i++){
+                if (i % 2 === 0){
+                    element[i].className = "ronald";
+                }
+                else {
+                    element[i].className = "mcdonald";
+                }
+            }
+    </script>
+</body>
+</html>
